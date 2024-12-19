@@ -76,6 +76,7 @@ nav {
 /*#################### main / main-section ####################*/
 .main-section {
     height: 100vh;
+    position: relative;
 }
 .main-image{
     height: 100%;
@@ -84,20 +85,36 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
 }
-.section-about {
-    position: relative;
+.main-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translate(-50%);
+    color: rgba(239,229,199,1);
+    font-family: 'DMSerif';
 }
+.scroll-line-top {
+    width: 1px;
+    height: 20px;
+    background-color: rgba(239,229,199,1);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+}
+
+/*#################### main / main-section / section-about ####################*/
 .content {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-60%);
 }
 .content-title {
     font-size: 5vw;
     font-family: cursive;
-    color: rgba(144,50,61,1);
+    color: rgba(144,50,61,10);
     padding-bottom: 1vw;
 }
 .content-desc {
@@ -105,6 +122,17 @@ nav {
     color: rgba(0,0,0,0.5);
     padding-top: 0.5vw;
 }
+.scroll-line-bottom {
+    width: 1px;
+    height: 0px;
+    background-color: rgba(144,50,61,1);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    transition: all 0.5s linear;
+}
+
+/*#################### main / main-section / section-items ####################*/
 .main-section-title {
     padding: 6vw;
     font-size: 8vw;
