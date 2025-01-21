@@ -103,7 +103,7 @@ nav {
     transform: translate(-50%,0);
 }
 
-/*#################### main / main-section / section-about ####################*/
+/*#################### main / main-section / content ####################*/
 .content {
     text-align: center;
     position: absolute;
@@ -132,14 +132,87 @@ nav {
     transition: all 0.5s linear;
 }
 
-/*#################### main / main-section / section-items ####################*/
+/*#################### main / main-section / items ####################*/
 .main-section-title {
     padding: 6vw;
     font-size: 8vw;
     font-family: 'DMSerif';
     color: rgba(144,50,61,1);
 }
+.item-section {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.item-section-bg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.one {
+    .item-section-bg {
+        background-image: url(/asset/image/pepero.jpg);
+    }
+}
+.two {
+    .item-section-bg {
+        background-image: url(/asset/image/pepero.jpg);
+    }
+}
 
+
+/*#################### main / main-section / review ####################*/
+.review-section {
+    height: 100%;
+}
+.review-section-slide {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.review-section-slide-photo {
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+    text-align: center;
+    margin-right: 10px;
+    
+    img {
+        width: 100%;
+    }
+}
+
+/*#################### main / main-section / cover ####################*/
+.cover-section {
+    height: 100vh;
+    margin-top: 150px;
+    padding-top: 50px;
+    background-color: rgba(144,50,61,1);
+    border-radius: 50.182vw 50.182vw 0 0;
+}
+.cover-logo-container {
+    height: 75px;
+    width: 75px;
+    margin: 75px auto;
+    text-align: center;
+}
+.cover-logo {
+    height: 100%;
+    background-image: url(/asset/image/logo_white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cover-desc {
+    text-align: center;
+    font-size: 7.5vw;
+    font-family: cursive;
+    color: rgba(239,229,199,1);
+}
 
 /*#################### footer ####################*/
 .footer {
