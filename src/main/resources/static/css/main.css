@@ -151,6 +151,7 @@ nav {
     width: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .one {
     .item-section-bg {
@@ -213,6 +214,148 @@ nav {
     font-family: cursive;
     color: rgba(239,229,199,1);
 }
+
+/*#################### about / about-section ####################*/
+.about-section {
+    height: 100vh;
+    position: relative;
+}
+@font-face {
+    font-family: 'songmyung';
+    src: url('/asset/fonts/SongMyung-Regular.ttf') format('truetype');
+}
+.about-one {
+    background-color: rgb(91,11,20);
+}
+.about-section-question {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'songmyung';
+    font-size: 3rem;
+    color: rgba(239,229,199,1);
+}
+
+
+.about-two {
+    width: 100%;
+    background-image: url(/asset/image/about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-section-present {
+    padding: 9vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: rgba(239,229,199,1);
+    .eg {
+        font-family: 'DMserif';
+    }
+}
+.about-section-desc {
+    padding-left: 9vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.5);
+    line-height: 150%;
+}
+
+
+.about-three {
+    background-color: rgba(239,229,199,1);
+}
+.about-section-title {
+    text-align: center;
+    font-family: 'songmyung';
+    font-size: 3rem;
+    color: rgb(138,123,106);
+    padding-top: 9vw;
+    padding-bottom: 2vw;
+}
+
+.three-slide-container {
+    width: 75%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #333;
+    display: flex;
+}
+.three-slide-photo {
+    width: 50%;
+    height: 100%;
+    border-radius: 5mm;
+    background-color: #000;
+}
+.three-slide-text {
+    width: 50%;
+    padding-left: 2.5rem;
+    position: relative;
+}
+.three-slide-title {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem
+}
+.three-slide-desc {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+.three-slide-num {
+    color: #fff;
+    font-family: cursive;
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 1rem;
+}
+.three-slice-pagination {
+    position: absolute;
+    right: 2.5rem;
+    bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.three-slide-pagination-bullet {
+    background-color: rgb(138,123,106);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.active {
+    background-color: rgba(144,50,61,1);
+}
+
+
+
+
+.about-last {
+    background-color: rgba(144,50,61,1);
+}
+.about-section-closing {
+    font-family: 'songmyung';
+    font-size: 3rem;
+    color: rgba(239,229,199,1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translateX(-50%) translateY(-50%);
+}
+.emphasize {
+    font-size: 4rem;
+}
+
+
+
 
 /*#################### footer ####################*/
 .footer {
