@@ -5,7 +5,7 @@
     </head>
     <body>
         <th:block th:include="/layout/header"></th:block>
-        <div class="main">
+        <div class="main-wrap">
             <div class="main-section">
                 <div class="main-image"></div>
                 <div class="main-scroll">Scroll Down</div>
@@ -26,14 +26,14 @@
             <div class="main-section-title">Items</div>
             <div class="main-section">
                 <div class="slide-container">
-                    <div class="item-section one">
-                        <div class="item-section-bg">
-                            <div class="item-section-title">1</div>
+                    <div class="main-item-section one">
+                        <div class="main-item-section-bg">
+                            <div class="main-item-section-title">1</div>
                         </div>
                     </div>
-                    <div class="item-section two">
-                        <div class="item-section-bg">
-                            <div class="item-section-title">2</div>
+                    <div class="main-item-section two">
+                        <div class="main-item-section-bg">
+                            <div class="main-item-section-title">2</div>
                         </div>
                     </div>
                 </div>
@@ -78,8 +78,8 @@
         <th:block th:include="/common/script"></th:block>
         <script>
             $(document).ready(function(){
-                var itemSection = $(".item-section");
-                var itemSectionOffset = itemSection.offset().top;
+                var mainItemSection = $(".main-item-section");
+                var mainItemSectionOffset = mainItemSection.offset().top;
                 var reviewSection = $(".review-section");
                 var reviewSectionOffset = reviewSection.offset().top;
 
@@ -98,16 +98,16 @@
                     } else {
                         $(".content").fadeOut(800);
                     }
-                    //itemSection 의 스크롤 제어를 위한 스크립트
-                    if(scroll >= itemSectionOffset) {
-                        itemSection.css('position','fixed');
+                    //mainItemSection 의 스크롤 제어를 위한 스크립트
+                    if(scroll >= mainItemSectionOffset) {
+                        mainItemSection.css('position','fixed');
                     } else if(scroll >= reviewSectionOffset) {
-                        itemSection.css('position','absolute');
+                        mainItemSection.css('position','absolute');
                     }
                     if(scroll >= reviewSectionOffset) {
-                        itemSection.css('position','absolute');
+                        mainItemSection.css('position','absolute');
                     } else {
-                        itemSection.css('position','absolute');
+                        mainItemSection.css('position','absolute');
                     }
 
                 });
