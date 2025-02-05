@@ -39,7 +39,53 @@
                 </div>
             </div>
             <div class="main-section">
-                <div class=""></div>
+                <div class="section-title-right">News</div>
+                <div class="main-news-section">
+                    <div class="main-news-container">
+                        <div class="main-news-title">
+                            민푸팩토리가 네이버스토어에도 새롭게 오픈했어요!
+                        </div>
+                        <div class="main-news-desc">
+                            아이디어스에서 오픈하자마자 동메달 작가를 기록한 민푸작가의 새로운 시작 민푸팩토리가 네이버스토어에서 새롭게 오픈했습니다! 새로운 작품들과 민
+                        </div>
+                        <div class="main-news-bottom">
+                            <a href="#" title="바로가기" class="main-news-button">
+                                바로가기
+                                <span class="material-symbols-outlined">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-news-container">
+                        <div class="main-news-photo" style="background-image: url(/asset/image/smartstorelogo.png)"></div>
+                        <div class="main-news-title">
+                            민푸팩토리가 네이버스토어에도 새롭게 오픈했어요!
+                        </div>
+                        <div class="main-news-desc">
+                            아이디어스에서 오픈하자마자 동메달 작가를 기록한 민푸작가의 새로운 시작 민푸팩토리가 네이버스토어에서 새롭게 오픈했습니다! 새로운 작품들과 민
+                        </div>
+                        <div class="main-news-bottom">
+                            <a href="#" title="바로가기" class="main-news-button">
+                                바로가기
+                                <span class="material-symbols-outlined">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-news-container">
+                        <div class="main-news-photo" style="background-image: url(/asset/image/smartstorelogo.png)"></div>
+                        <div class="main-news-title">
+                            민푸팩토리가 네이버스토어에도 새롭게 오픈했어요!
+                        </div>
+                        <div class="main-news-desc">
+                            아이디어스에서 오픈하자마자 동메달 작가를 기록한 민푸작가의 새로운 시작 민푸팩토리가 네이버스토어에서 새롭게 오픈했습니다! 새로운 작품들과 민
+                        </div>
+                        <div class="main-news-bottom">
+                            <a href="#" title="바로가기" class="main-news-button">
+                                바로가기
+                                <span class="material-symbols-outlined">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main-section">
                 <div class="review-section">
@@ -47,7 +93,7 @@
                         Review
                     </div>
                     <div class="review-section-slide">
-                        <th:block th:each="num : ${#numbers.sequence(1,2)}">
+                        <th:block th:each="num : ${#numbers.sequence(1,5)}">
                             <div class="review-section-slide-photo">
                                 <img src="/asset/image/review1.jpg"/>
                             </div>
@@ -78,10 +124,6 @@
         <th:block th:include="/common/script"></th:block>
         <script>
             $(document).ready(function(){
-                var mainItemSection = $(".main-item-section");
-                var mainItemSectionOffset = mainItemSection.offset().top;
-                var reviewSection = $(".review-section");
-                var reviewSectionOffset = reviewSection.offset().top;
 
                 $(window).scroll(function(){
 
@@ -97,17 +139,6 @@
                         $(".content").fadeIn(800);
                     } else {
                         $(".content").fadeOut(800);
-                    }
-                    //mainItemSection 의 스크롤 제어를 위한 스크립트
-                    if(scroll >= mainItemSectionOffset) {
-                        mainItemSection.css('position','fixed');
-                    } else if(scroll >= reviewSectionOffset) {
-                        mainItemSection.css('position','absolute');
-                    }
-                    if(scroll >= reviewSectionOffset) {
-                        mainItemSection.css('position','absolute');
-                    } else {
-                        mainItemSection.css('position','absolute');
                     }
 
                 });
