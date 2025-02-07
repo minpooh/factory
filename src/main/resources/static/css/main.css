@@ -47,7 +47,7 @@ img {
 /*#################### header / nav ####################*/
 nav {
     width: 100%;
-    padding: 1.5vw 2.5vw;
+    padding: 2.5vw;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@ nav {
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url(/asset/image/logo_white.png);
+    background-image: url(/asset/image/logo_beige.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,6 +66,7 @@ nav {
     justify-content: space-between;
     gap: 2vw;
     font-family: 'DMSerif';
+    padding-right: 1vw;
 }
 
 /*#################### main ####################*/
@@ -152,6 +153,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .one {
     .main-item-section-bg {
@@ -171,7 +173,7 @@ nav {
 /*#################### main / main-section / news ####################*/
 .section-title-right {
     text-align: right;
-    padding: 6vw;
+    padding: 7vw 6vw;
     font-size: 8vw;
     font-family: 'DMSerif';
     color: rgba(144,50,61,1);
@@ -239,7 +241,7 @@ nav {
     height: 280px;
     min-width: 280px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
     
     img {
         width: 100%;
@@ -266,7 +268,7 @@ nav {
 }
 .cover-logo {
     height: 100%;
-    background-image: url(/asset/image/logo_white.png);
+    background-image: url(/asset/image/logo_beige2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -329,22 +331,27 @@ nav {
     background-repeat: no-repeat;
 }
 .about-section-present {
-    padding: 9vw;
+    padding: 10vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4rem;
-    font-weight: 500;
-    color: rgb(91,11,20);
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 2px 3px rgba(0,0,0,.25);
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     .eg {
         font-family: 'DMserif';
     }
     .about-section-desc {
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 500;
-        color: rgba(239,229,199,1);
+        color: #dfdfdf;
+        text-shadow: 0 2px 3px rgba(0,0,0,.25);
         text-align: end;
+        padding-right: 5rem;
+        line-height: 150%;
     }
 }
 .about-section-desc2 {
@@ -352,51 +359,66 @@ nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
     font-weight: 500;
-    color: rgba(0,0,0,.5);
+    color: #eee;
+    text-shadow: 0 2px 3px rgba(0,0,0,.25);
     line-height: 150%;
 }
 
 
 .about-three {
-    background-color: rgba(239,229,199,1);
-}
-.about-section-title {
-    width: 75%;
-    margin: 0 auto;
-    font-family: 'songmyung';
-    font-size: 3rem;
-    color: rgb(138,123,106);
-    padding-top: 9vw;
-    padding-bottom: 3vw;
-}
-.about-three-slide {
-    position: relative;
-    width: 75%;
-    height: 300px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.three-slide-container {
-    display: flex;
-}
-.three-slide-item {
-    flex: 0 0 100%;
-    height: 100%;
-    display: flex;
-}
-.three-slide-photo {
-    width: 50%;
-    height: 300px;
-    border-radius: 5mm;
+    background-image: url(/asset/image/special_beige.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.three-slide-text {
+.about-section-title {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(138,123,106);
+}
+
+.about-four {
+    background-image: url(/asset/image/special_beige.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.about-four-slide {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.four-slide-container {
+    display: flex;
+    height: 300px;
+}
+.four-slide-item {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+}
+.four-slide-photo {
+    width: 50%;
+    height: 300px;
+    border-radius: 6mm;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.four-slide-text {
     width: 50%;
     padding-left: 2.5rem;
 }
-.three-slide-title {
+.four-slide-title {
     color: rgb(138,123,106);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -404,26 +426,26 @@ nav {
     padding-top: 2rem;
     padding-bottom: 1.5rem
 }
-.three-slide-desc {
+.four-slide-desc {
     color: rgb(138,123,106);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     line-height: 150%;
 }
-.three-slide-num {
+.four-slide-num {
     color: rgb(138,123,106);
     font-family: cursive;
     font-size: 2.5rem;
     font-weight: 600;
 }
-.three-slide-pagination {
+.four-slide-pagination {
     position: absolute;
     right: 2.5rem;
     bottom: 1.5rem;
     display: flex;
     gap: 1rem;
 }
-.three-slide-pagination-bullet {
+.four-slide-pagination-bullet {
     background-color: rgb(138,123,106);
     width: 15px;
     height: 15px;
@@ -439,6 +461,10 @@ nav {
 .about-last {
     background-color: rgba(144,50,61,1);
     position: relative;
+    background-image: url(/asset/image/special.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .about-section-closing {
     font-family: 'songmyung';
