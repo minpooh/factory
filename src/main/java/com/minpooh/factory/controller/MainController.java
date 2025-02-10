@@ -19,4 +19,9 @@ public class MainController {
     public String item() {
         return "item";
     }
+
+    @GetMapping(value = "/news")
+    public String news() {
+        return "news";
+    }
 }
