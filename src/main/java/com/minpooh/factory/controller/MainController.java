@@ -20,8 +20,8 @@ public class MainController {
         return "item";
     }
 
-    @GetMapping(value = "/news")
-    public String news() {
-        return "news";
+    @GetMapping(value = "/community")
+    public String community() {
+        return "community";
     }
 }
