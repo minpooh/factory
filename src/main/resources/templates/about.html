@@ -44,61 +44,60 @@
                 <div class="about-four-slide">
                     <div class="four-slide-container">
                         <div class="four-slide-item">
-                            <div class="four-slide-photo" style="background-image: url(/asset/image/aboutslideimage.jpg)"></div>
+                            <div class="four-slide-photo" style="background-image: url(/asset/image/aboutslideimage1.jpg)"></div>
                             <div class="four-slide-text">
                                 <div class="four-slide-title">
-                                    기술과 품질
+                                    세심한 맞춤형 디자인
                                 </div>
                                 <div class="four-slide-desc">
-                                    민푸팩토리는 언제나 고퀄리티의 제품만을 만들어냅니다.<br/>
-                                    비슷한 제품은 많아도 전문디자이너의 기술과<br/>
-                                    가격보다는 퀄리티를 선택한 민푸팩토리만의 제품은<br/>
-                                    많은 고객분들이 선택해주시는 이유입니다.
+                                    우리 브랜드는 1:1 맞춤형 디자인을 제공합니다.<br/>
+                                    고객이 원하는 테마, 색상, 스타일을 세심하게 고려하여<br/>
+                                    선물의 의미를 더욱 특별하게 만들어드립니다. 맞춤형 서비스로<br/>
+                                    선물 받는 이의 개성과 취향을 반영한 고유한 패키지를 제공합니다.
                                 </div>
                                 <div class="four-slide-num">01</div>
                             </div>
                         </div>
                         <div class="four-slide-item">
-                            <div class="four-slide-photo"></div>
+                            <div class="four-slide-photo" style="background-image: url(/asset/image/aboutslideimage2.jpg)"></div>
                             <div class="four-slide-text">
                                 <div class="four-slide-title">
-                                    기술과 품질
+                                    고품질의 재료와 소재
                                 </div>
                                 <div class="four-slide-desc">
-                                    민푸팩토리는 언제나 고퀄리티의 제품만을 만들어냅니다.<br/>
-                                    비슷한 제품은 많아도 전문디자이너의 기술과<br/>
-                                    가격보다는 퀄리티를 선택한 민푸팩토리만의 제품은<br/>
-                                    많은 고객분들이 선택해주시는 이유입니다.
+                                    모든 제품은 최고급 재료로 제작됩니다. 품질에 대한<br/>
+                                    철저한 기준을 세우고, 환경을 고려한 지속 가능한 소재를 사용하여<br/>
+                                    패키지의 내구성과 미적 가치를 동시에 추구합니다.<br/>
+                                    고객이 받는 선물이 그 자체로 가치를 느낄 수 있도록 노력합니다.
                                 </div>
                                 <div class="four-slide-num">02</div>
                             </div>
                         </div>
                         <div class="four-slide-item">
-                            <div class="four-slide-photo"></div>
+                            <div class="four-slide-photo" style="background-image: url(/asset/image/aboutslideimage3.jpg)"></div>
                             <div class="four-slide-text">
                                 <div class="four-slide-title">
-                                    기술과 품질
+                                    함께하는 성장
                                 </div>
                                 <div class="four-slide-desc">
-                                    민푸팩토리는 언제나 고퀄리티의 제품만을 만들어냅니다.<br/>
-                                    비슷한 제품은 많아도 전문디자이너의 기술과<br/>
-                                    가격보다는 퀄리티를 선택한 민푸팩토리만의 제품은<br/>
-                                    많은 고객분들이 선택해주시는 이유입니다.
+                                    세심함을 통해 얻어낸 가치를 바탕으로<br/>
+                                    지속 가능한 성장을 위해 끊임없이 노력합니다.<br/>
+                                    민푸팩토리의 목표는 변화하는 산업과 환경에 맞춰<br/>
+                                    당신의 삶의 질을 높이는 것입니다.
                                 </div>
                                 <div class="four-slide-num">03</div>
                             </div>
                         </div>
                         <div class="four-slide-item">
-                            <div class="four-slide-photo"></div>
+                            <div class="four-slide-photo" style="background-image: url(/asset/image/aboutslideimage4.jpg)"></div>
                             <div class="four-slide-text">
                                 <div class="four-slide-title">
-                                    기술과 품질
+                                    고객 서비스
                                 </div>
                                 <div class="four-slide-desc">
-                                    민푸팩토리는 언제나 고퀄리티의 제품만을 만들어냅니다.<br/>
-                                    비슷한 제품은 많아도 전문디자이너의 기술과<br/>
-                                    가격보다는 퀄리티를 선택한 민푸팩토리만의 제품은<br/>
-                                    많은 고객분들이 선택해주시는 이유입니다.
+                                    우리는 좋은 제품을 만드는 것에 만족하지 않겠습니다.<br/>
+                                    신속한 피드백과 사후 관리를 통해<br/>
+                                    더 높은 만족도를 드리기 위해 노력합니다.
                                 </div>
                                 <div class="four-slide-num">04</div>
                             </div>
@@ -134,21 +133,38 @@
             var mHtml = $("html");
             var page = 1;
             var isAnimating = false;
+            var isSliding = false;
+            var currentSlide = 0;
 
             mHtml.animate({scrollTop : 0},10);
 
             $(window).on("wheel", function(e) {
-                if(isAnimating) return;
-
+                if(isAnimating || isSliding) return;
                 isAnimating = true;
                 
-                if(e.originalEvent.deltaY > 0) {
-                    if(page < 6) {
-                        page++;
+                if(page === 4) {
+                    if(e.originalEvent.deltaY > 0) {
+                        if(currentSlide < 3) {
+                            slideNext();
+                        } else {
+                            page++;
+                        }
+                    } else if (e.originalEvent.deltaY < 0) {
+                        if(currentSlide > 0) {
+                            slidePrev();
+                        } else {
+                            page--;
+                        }
                     }
-                } else if(e.originalEvent.deltaY < 0) {
-                    if(page > 1) {
-                        page--;
+                } else {
+                    if(e.originalEvent.deltaY > 0) {
+                        if(page < 6) {
+                            page++;
+                        }
+                    } else if(e.originalEvent.deltaY < 0) {
+                        if(page > 1) {
+                            page--;
+                        }
                     }
                 }
                 var posTop =(page-1) * $(window).height();
@@ -157,7 +173,38 @@
                         isAnimating = false;
                     }, 500);
                 });
-            })
+            });
+
+            function slideNext() {
+                if(currentSlide < 3) {
+                    currentSlide++;
+                    slideToCurrent();
+                }
+            }
+
+            function slidePrev() {
+                if(currentSlide > 0) {
+                    currentSlide--;
+                    slideToCurrent();
+                }
+            }
+
+            function slideToCurrent() {
+                isSliding = true;
+                var slidePosition = -currentSlide * 100;
+                $(".four-slide-container").animate({left : slidePosition + "%"},600, function(){
+                    updatePagination();
+                    setTimeout(function(){
+                        isSliding = false;
+                    }, 300);
+                });
+                console.log(slidePosition);
+            }
+
+            function updatePagination() {
+                $(".four-slide-pagination-bullet").removeClass("active");
+                $(".four-slide-pagination-bullet").eq(currentSlide).addClass("active");
+            }
             
         </script>
     </body>
