@@ -1,3 +1,78 @@
+/*##################### font #################### */
+@font-face {
+    font-family: 'DMSerif';
+    src: url('/asset/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'songmyung';
+    src: url('/asset/fonts/SongMyung-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url(./woff/Pretendard-Black.woff) format('woff'), url(./woff/Pretendard-Black.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url(./woff/Pretendard-ExtraBold.woff) format('woff'), url(./woff/Pretendard-ExtraBold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(./woff/Pretendard-Bold.woff) format('woff'), url(./woff/Pretendard-Bold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url(./woff/Pretendard-SemiBold.woff) format('woff'), url(./woff/Pretendard-SemiBold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url(./woff/Pretendard-Medium.woff) format('woff'), url(./woff/Pretendard-Medium.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(./woff/Pretendard-Regular.woff) format('woff'), url(./woff/Pretendard-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url(./woff/Pretendard-Light.woff) format('woff'), url(./woff/Pretendard-Light.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url(./woff/Pretendard-ExtraLight.woff) format('woff'), url(./woff/Pretendard-ExtraLight.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url(./woff/Pretendard-Thin.woff) format('woff'), url(./woff/Pretendard-Thin.woff) format('woff');
+}
+
+
+
+
 /*#################### reset ####################*/
 *,
 *::before,
@@ -10,6 +85,7 @@ body, html {
     padding: 0;
     font-size: 15px;
     font-weight: 400;
+    font-family: 'Pretendard';
     color: #333;
     text-align: left;
 }
@@ -46,11 +122,6 @@ a:link, a:visited {
 img {
     border: none;
     width: 100%;
-}
-
-@font-face {
-    font-family: 'DMSerif';
-    src: url('/asset/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
 /*#################### header ####################*/
@@ -176,8 +247,8 @@ nav {
 }
 .main-section-desc {
     font-size: 16px;
-    padding: 0 6vw 4vw 6vw;
     color: rgba(0,0,0,0.5);
+    padding: 0 6vw 4vw 6vw;
 }
 .main-slide-section {
     height: 300vh;
@@ -248,30 +319,6 @@ nav {
     color: rgba(138,123,106,.5);
     padding: 0 20px 20px 20px;
 }
-.main-news-desc {
-    width: 100%;
-    font-size: 16px;
-    line-height: 27px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    color: rgb(138,123,106);
-    padding-top: 20px;
-    border-top: 0.5px solid rgb(138,123,106);
-}
-.main-news-bottom {
-    padding-top: 1rem;
-    display: flex;
-    justify-content: end;
-}
-.main-news-button {
-    color: #333;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-}
-.main-news-button:hover {
-    transform: translateX(-3%);
-}
-
 
 
 
@@ -375,10 +422,6 @@ nav {
     height: 100vh;
     background-attachment: fixed;
 }
-@font-face {
-    font-family: 'songmyung';
-    src: url('/asset/fonts/SongMyung-Regular.ttf') format('truetype');
-}
 .about-one {
     background-color: rgb(91,11,20);
 }
@@ -418,7 +461,6 @@ nav {
 }
 .about-section-present {
     padding: 10vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4rem;
     font-weight: 600;
     color: #fff;
@@ -430,7 +472,6 @@ nav {
         font-family: 'DMserif';
     }
     .about-section-desc {
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2rem;
         font-weight: 500;
         color: #dfdfdf;
@@ -442,7 +483,6 @@ nav {
 }
 .about-section-desc2 {
     padding-left: 9vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
     font-weight: 500;
     color: #eee;
@@ -463,7 +503,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: rgb(138,123,106);
@@ -506,7 +545,6 @@ nav {
 }
 .four-slide-title {
     color: rgb(138,123,106);
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 2.25rem;
     padding-top: 2rem;
@@ -514,7 +552,6 @@ nav {
 }
 .four-slide-desc {
     color: rgb(138,123,106);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     line-height: 150%;
 }
@@ -583,10 +620,10 @@ nav {
     font-size: 3.5rem;
     font-family: 'DMSerif';
     color: rgb(144,50,61);
+    padding-bottom: 7.5px;
 }
 .item-section-desc {
     font-size: 1.25rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     color: #777;
 }
 .item-section-photoline {
@@ -687,7 +724,7 @@ nav {
 
 
 /*#################### community / community-section / faq ####################*/
-.faq-accordion-box {
+.community-section-accordion {
     border-top: 4px solid rgb(144,50,61);
     width: 100%;
 }
@@ -724,6 +761,58 @@ nav {
     line-height: 1.5rem;
 }
 
+/*#################### community / view ####################*/
+.community-view-wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4vw;
+    padding-bottom: 11vmax;
+    text-align: center;
+}
+.community-view-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    padding: 30px 0;
+    border-top: 4px solid rgb(144,50,61);
+}
+.community-view-date {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: rgba(138,123,106,.5);
+    padding-bottom: 50px;
+}
+
+.community-view-image {
+    width: 75%;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+.community-view-desc {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.community-view-back {
+    margin: 0 auto;
+    width: 180px;
+}
+a.community-view-back-button{
+    display: block;
+    width: 180px;
+    padding: 20px 0;
+    font-weight: 600;
+    color: rgb(144,50,61);
+    border: 1px solid rgb(144,50,61);
+    border-radius: 50px;
+    transition: all 0.3s linear;
+}
+.community-view-back-button:hover {
+    background-color: rgb(144,50,61);
+    color: #fff;
+}
 
 
 /*#################### footer ####################*/

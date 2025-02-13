@@ -24,4 +24,14 @@ public class MainController {
     public String community() {
         return "community";
     }
+
+    @GetMapping(value = "/community/event/view")
+    public String communityEventView() {
+        return "community_event_view";
+    }
+
+    @GetMapping(value = "/community/event/view2")
+    public String communityEventView2() {
+        return "community_event_view2";
+    }
 }
