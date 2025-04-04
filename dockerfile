@@ -1,5 +1,5 @@
 # OpenJDK 21 이미지를 사용 (Java 21 환경)
-FROM openjdk:21-jre-slim
+FROM openjdk:21-oracle
 
 # 작업 디렉토리 설정
 WORKDIR /app
