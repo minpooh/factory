@@ -5,7 +5,7 @@ FROM openjdk:21-oracle
 WORKDIR /app
 
 # Gradle 빌드 후 생성된 JAR 파일을 컨테이너로 복사
-COPY build/libs/factory-0.0.1-SNAPSHOT.jar /app/factory.jar
+COPY ./build/libs/factory-0.0.1-SNAPSHOT.jar /app/factory.jar
 
 # JAR 파일을 실행할 명령어
 ENTRYPOINT ["java", "-jar", "/app/factory.jar"]
