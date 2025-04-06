@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <th:block th:include="/common/head"></th:block>
-    </head>
+    <head th:replace="~{common/head :: headFragment}"></head>
     <body>
-        <th:block th:include="/layout/header"></th:block>
+        <th:block th:replace="~{layout/header :: headerFragment}"></th:block>
         <div class="community-title">Community</div>
         <div class="community-view-wrap">
             <div class="community-view-title">
@@ -43,6 +41,6 @@
                 <a href="javascript:history.back();" class="community-view-back-button">돌아가기</a>
             </div>
         </div>
-        <th:block th:include="/layout/footer"></th:block>
+        <th:block th:replace="~{layout/footer :: footerFragment}"></th:block>
     </body>
 </html>

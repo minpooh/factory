@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <th:block th:include="/common/head"></th:block>
-    </head>
+    <head th:replace="~{common/head :: headFragment}"></head>
     <body>
-        <th:block th:include="/layout/header"></th:block>
+        <th:block th:replace="~{layout/header :: headerFragment}"></th:block>
         <div class="community-wrap">
             <div class="community-title">Community</div>
             <ul class="community-menu">
@@ -107,8 +105,8 @@
                 </div>
             </div>
         </div>
-        <th:block th:include="/layout/footer"></th:block>
-        <th:block th:include="/common/script"></th:block>
+        <th:block th:replace="~{layout/footer :: footerFragment}"></th:block>
+        <th:block th:replace="~{common/script :: scriptFragment}"></th:block>
         <script>
             //버튼별 섹션을 보이기 위한 스크립트
             function showSection(sectionNumber) {

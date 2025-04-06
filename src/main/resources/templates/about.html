@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <th:block th:include="/common/head"></th:block>
-    </head>
+    <head th:replace="~{common/head :: headFragment}"></head>
     <body>
-        <th:block th:include="/layout/header"></th:block>
+        <th:block th:replace="~{layout/header :: headerFragment}"></th:block>
         <div class="about-wrap">
             <div class="about-section about-one">
                 <div class="about-section-question">
@@ -122,8 +120,8 @@
                 </div>
             </div>
         </div>
-        <th:block th:include="/layout/footer"></th:block>
-        <th:block th:include="/common/script"></th:block>
+        <th:block th:replace="~{layout/footer :: footerFragment}"></th:block>
+        <th:block th:replace="~{common/script :: scriptFragment}"></th:block>
         <script>
             //스크롤시 섹션하나씩 슬라이딩 되도록 하는 스크립트
             window.addEventListener("wheel", function(e){
